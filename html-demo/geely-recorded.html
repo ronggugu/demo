@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-container {
+      padding: 20px;
+    }
+
+    .page-container .pc-container {
+      display: block;
+    }
+
+    .page-container .mob-container {
+      display: none;
+    }
+
+    .page-container .pc-container h3 {
+      font-size: 24px;
+      color: #202020;
+      margin-bottom: 20px;
+    }
+
+    .page-container .pc-container table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .page-container .pc-container table thead th {
+      background-color: #202020;
+      border: 1px solid #ebeef5;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .page-container .pc-container table tbody td {
+      padding: 10px;
+      border: 1px solid #ebeef5;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .page-container .pc-container table tbody td a {
+      color: #ff5b00;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .page-container .pc-container table tbody tr:hover {
+      background-color: #f5f7fa;
+    }
+
+    @media screen and (max-width: 768px) {
+      .page-container  {
+        padding: 0;
+      }
+      .page-container .pc-container {
+        display: none;
+      }
+
+      .page-container .mob-container {
+        display: block;
+        background: #f6f6f6;
+      }
+
+      .mobileMode {
+        background: #f6f6f6
+      }
+
+      .mobileMode-wrap-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 16px 9px;
+        color: #a5a7aa
+      }
+
+      .mobileMode-wrap-title a {
+        display: inline-block;
+        font-size: 14px;
+      text-decoration: none;
+      }
+
+      .mobileMode-wrap-title-button {
+        color: #ff5b00
+      }
+
+      .mobileMode-wrap-content {
+        font-size: 14px;
+        background: #fff;
+        padding: 0 16px
+      }
+
+      .mobileMode-wrap-content-item {
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-between
+      }
+
+      .mobileMode-wrap-content .bottomborder {
+        border-bottom: 1px solid #dcdde0;
+      }
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+
+
+    <div class="pc-container">
+      <h3>吉利备案</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>备案序号</th>
+            <th>APP/小程序/H5名称</th>
+            <th>应用主体</th>
+            <th>备案号</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>雷达应用</td>
+            <td>2020-12-12</td>
+            <td>已备案</td>
+            <td>
+              <a href="https://www.geely.com" target="_blank" rel="noopener">查看详情</a>
+            </td>
+          </tr>
+          <td>2</td>
+          <td>雷达应用</td>
+          <td>2020-12-12</td>
+          <td>已备案</td>
+          <td>
+            <a href="https://www.geely.com" target="_blank" rel="noopener">查看详情</a>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mob-container">
+      <div class="mobileMode-wrap">
+        <div class="mobileMode-wrap-title"><span class="mobileMode-wrap-title-text">备案序号1</span>
+          <a href="https://www.geely.com" class="mobileMode-wrap-title-button" target="_blank" rel="noopener">查看详情</a>
+        </div>
+
+        <div class="mobileMode-wrap-content">
+          <div class="mobileMode-wrap-content-item bottomborder"><span>名称</span> <span>云听</span></div>
+          <div class="mobileMode-wrap-content-item bottomborder"><span>应用主体</span> <span>央广云听文化传媒有限公司</span></div>
+          <div class="mobileMode-wrap-content-item"><span>备案号</span> <span>京ICP备15053917号-12A</span></div>
+        </div>
+      </div>
+      <div class="mobileMode-wrap">
+        <div class="mobileMode-wrap-title"><span class="mobileMode-wrap-title-text">备案序号1</span>
+          <a href="https://www.geely.com" class="mobileMode-wrap-title-button" target="_blank" rel="noopener">查看详情</a>
+        </div>
+
+        <div class="mobileMode-wrap-content">
+          <div class="mobileMode-wrap-content-item bottomborder"><span>名称</span> <span>云听</span></div>
+          <div class="mobileMode-wrap-content-item bottomborder"><span>应用主体</span> <span>央广云听文化传媒有限公司</span></div>
+          <div class="mobileMode-wrap-content-item"><span>备案号</span> <span>京ICP备15053917号-12A</span></div>
+        </div>
+      </div>
+      <div class="mobileMode-wrap">
+        <div class="mobileMode-wrap-title"><span class="mobileMode-wrap-title-text">备案序号1</span>
+          <a href="https://www.geely.com" class="mobileMode-wrap-title-button" target="_blank" rel="noopener">查看详情</a>
+        </div>
+
+        <div class="mobileMode-wrap-content">
+          <div class="mobileMode-wrap-content-item bottomborder"><span>名称</span> <span>云听</span></div>
+          <div class="mobileMode-wrap-content-item bottomborder"><span>应用主体</span> <span>央广云听文化传媒有限公司</span></div>
+          <div class="mobileMode-wrap-content-item"><span>备案号</span> <span>京ICP备15053917号-12A</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
